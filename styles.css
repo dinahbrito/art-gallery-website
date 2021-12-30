@@ -56,3 +56,58 @@ p {
     font-weight: 300;
     line-height: 1.75rem;
 }
+
+/*----------
+    Layout
+  ----------*/
+
+.hero-container {
+    margin: 2rem 1rem 7.5rem 1rem;
+}
+
+.hero-text {
+    margin-top: 2rem;
+}
+
+/*---------------
+    Link/Button
+  ---------------*/
+
+.arrow, 
+.link {
+    align-items: center;
+    display: flex;
+    height: 4.5rem;
+}
+
+.arrow {
+    background-color: var(--accent);
+    justify-content: center;
+    width: 3.5rem;
+}
+
+.link {
+    background-color: var(--heading);
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 16.25rem;
+}
+
+.link a {
+    color: var(--background);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 3.64px;
+    line-height: 1.49625rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    background-color: var(--accent);
+}
+
+.link:hover .arrow {
+    background-color: var(--heading);
+}
