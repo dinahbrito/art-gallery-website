@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 
   <title>Art gallery website</title>
 </head>
@@ -14,10 +22,18 @@
   <main>
 
     <header>
-      <div class="hero-img"></div>
+
+      <picture class="hero">
+        <source media="(min-width: 768px)" srcset="./assets/tablet/image-hero.jpg,
+        ./assets/tablet/image-hero@2x.jpg 2x">
+        <source media="(min-width: 1439px)"
+          srcset=".assets/desktop/image-hero.jpg, ./assets/desktop/image-hero@2x.jpg 2x">
+        <img src=" ./assets/mobile/image-hero.jpg" srcset="./assets/mobile/image-hero@2x.jpg 2x"
+          alt="Man and woman walking past and looking at a mostly black and white painting of an eldery woman wearing brown glasses">
+      </picture>
 
       <div class="hero-container">
-        <h1>Modern Art Gallery</h1>
+        <h1>Modern <br> Art Gallery</h1>
 
         <div class="hero-text">
           <p>The arts in the collection of the Modern Art Gallery all started
@@ -30,7 +46,15 @@
     </header>
 
     <section class="day">
-      <img src="" alt="">
+
+      <picture class="grid-1">
+        <source media="(min-width: 768px)" srcset="./assets/tablet/image-grid-1.jpg,
+        ./assets/tablet/grid-1@2x.jpg 2x">
+        <source media="(min-width: 1439px)"
+          srcset=".assets/desktop/image-grid-1.jpg, ./assets/desktop/image-grid-1@2x.jpg 2x">
+        <img src=" ./assets/mobile/image-grid-1.jpg" srcset="./assets/mobile/image-grid-1@2x.jpg"
+          alt="Image of museum exhibit featuring sculpture and prints of abstract art in mostly orange and turquoise colors">
+      </picture>
 
       <div class="day-container">
         <h2>Your day at the gallery</h2>
@@ -40,10 +64,26 @@
     </section>
 
     <section class="inspired">
-      <img src="" alt="">
+
+      <picture class="grid-2">
+        <source media="(min-width: 768px)" srcset="./assets/tablet/image-grid-2.jpg,
+        ./assets/tablet/grid-2@2x.jpg 2x">
+        <source media="(min-width: 1439px)"
+          srcset=".assets/desktop/image-grid-2.jpg, ./assets/desktop/image-grid-2@2x.jpg 2x">
+        <img src=" ./assets/mobile/image-grid-1.jpg" srcset="./assets/mobile/image-grid-2@2x.jpg"
+          alt="Image of light colored wood bench inside of museum facing a large photographic print of part of a circular stairwell">
+      </picture>
 
       <div class="inspired-container">
-        <img src="" alt="">
+
+        <picture class="grid-3">
+          <source media="(min-width: 768px)" srcset="./assets/tablet/image-grid-3.jpg,
+          ./assets/tablet/grid-3@2x.jpg 2x">
+          <source media="(min-width: 1439px)"
+            srcset=".assets/desktop/image-grid-3.jpg, ./assets/desktop/image-grid-3@2x.jpg 2x">
+          <img src=" ./assets/mobile/image-grid-3.jpg" srcset="./assets/mobile/image-grid-3@2x.jpg"
+            alt="Image of a few people looking at paintings inside the museum">
+        </picture>
 
         <div class="inspired-text">
           <h2>Come &amp; be inspired</h2>

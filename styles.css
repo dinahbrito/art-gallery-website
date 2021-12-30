@@ -1,0 +1,58 @@
+:root {
+    --accent: #D5966C;
+    --heading: #141414;
+    --body-text: #444444;
+    --background: #FFFFFF;
+}
+
+/*---------
+    Reset
+  ---------*/
+
+  *,
+  * ::before,
+  * ::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+  }
+
+
+  /* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/*----------------
+    Global Styles
+  ----------------*/
+
+/*--------------
+    Typography
+  --------------*/
+
+h1,
+h2,
+h3 {
+    color: var(--heading);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.75rem;
+    line-height: 3.4375rem;
+}
+
+p {
+    color: var(--body-text);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+}
