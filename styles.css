@@ -31,6 +31,10 @@ picture {
     Global Styles
   ----------------*/
 
+body {
+  background-color: var(--background);
+}
+
 /*--------------
     Typography
   --------------*/
@@ -44,9 +48,27 @@ h3 {
     text-transform: uppercase;
 }
 
+h3,
+footer,
+footer p,
+.inspired-text h2, 
+.inspired-text p {
+    color: var(--background);
+}
+
 h1 {
     font-size: 3.75rem;
     line-height: 3.4375rem;
+}
+
+h2 {
+    font-size: 3.125rem;
+    line-height: 2.8125rem;
+}
+
+h2 span::before {
+    content:"\A";
+    white-space: pre;
 }
 
 p {
@@ -57,9 +79,19 @@ p {
     line-height: 1.75rem;
 }
 
+i {
+    font-size: 1.25rem;
+    margin-right: 1.25rem;
+}
+
 /*----------
     Layout
   ----------*/
+
+section {
+      margin-left: 1rem;
+      margin-right: 1rem;
+}
 
 .hero-container {
     margin: 2rem 1rem 7.5rem 1rem;
@@ -67,6 +99,54 @@ p {
 
 .hero-text {
     margin-top: 2rem;
+}
+
+/* Day/1st Section */
+.grid-1 {
+    margin-bottom: 1.5625rem;
+}
+
+.day {
+    margin-bottom: 2rem;
+}
+
+.day-container p{
+    margin-top: 1.3125rem;
+}
+
+/* 2nd Section */
+
+.grid-2,
+.grid-3 {
+    margin-bottom: 1rem;
+}
+
+.inspired-text,
+footer {
+    background-color: var(--heading);
+}
+
+.inspired-text {
+    
+    margin-bottom: 7.5rem;
+    padding: 3rem 1.5rem;
+}
+
+.inspired-text p {
+    margin-top: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    padding: 3rem 2rem;
+}
+
+footer p {
+    margin-top: 2.375rem;
+    margin-bottom: 2.375rem;
 }
 
 /*---------------
@@ -104,10 +184,34 @@ p {
     text-transform: uppercase;
 }
 
+.link:hover,
+.link:hover .arrow {
+    transition: all .5s ease-in-out;
+}
+
 .link:hover {
     background-color: var(--accent);
 }
 
 .link:hover .arrow {
     background-color: var(--heading);
+}
+
+/* social links */
+footer a {
+    color: var(--background);
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+/*------------------
+    Tablet Screens
+  ------------------*/
+
+@media screen and (min-width: 768px) {
+    h2 span::before {
+        display: none;
+    }
 }
