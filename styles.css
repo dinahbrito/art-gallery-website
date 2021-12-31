@@ -256,6 +256,7 @@ footer a:hover {
     }
 
     /* Day Section */
+
     .day {
         display: flex;
         height: 25rem;
@@ -292,18 +293,32 @@ footer a:hover {
         margin: 0;
     }
 
-
     .inspired-text{
         padding: 5.3125rem 1.75rem;
     }
 
-
     .grid-2 {
-        margin-right: 11px;
+        margin-right: .06875rem;
     }
 
     .grid-3 {
         margin-bottom: 0.6875rem;
     }
-    
+
+    /* footer */
+    footer {
+        padding: 3.5rem 2.4375rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+        line-height: 1.625rem;
+        margin: 0;
+        width: 17.5625rem;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
