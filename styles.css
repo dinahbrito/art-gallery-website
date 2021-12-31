@@ -212,13 +212,19 @@ footer a:hover {
 
 @media screen and (min-width: 768px) {
    /* Typography */
-    h2 span::before {
-        display: none;
+   
+   h1 {
+       font-size: 4.375rem;
+       line-height: 4.0625rem;
+   }
+
+   h2 {
+    font-size: 3.125rem;
+    line-height: 2.8125rem;
     }
 
-    h2 {
-        font-size: 3.125rem;
-        line-height: 2.8125rem;
+   h2 span::before {
+        display: none;
     }
 
     .day-container p, 
@@ -226,14 +232,33 @@ footer a:hover {
         margin-top: 1.5rem;
     }
 
+    /* Layout */
+    
     section {
         margin-left: 2.4375rem;
         margin-right: 2.4375rem;
     }
 
+    /* Header */
+
+    header {
+        display: flex;
+        margin-bottom: 7.5rem;
+    }
+
+    .hero-container {
+        margin: 9.0625rem 2.5rem 0 -3rem;
+        width: 21.1875rem;
+    }
+
+    .hero-text {
+        margin-top: 3rem;
+    }
+
     /* Day Section */
     .day {
         display: flex;
+        height: 25rem;
         justify-content: space-between;
         margin-bottom: 0.6875rem;
     }
@@ -249,6 +274,10 @@ footer a:hover {
     .day .day-container {
         max-width: 13.9375rem;
         order: 1;
+    }
+
+    .day-container {
+        margin-top: 2.375rem;
     }
 
     
