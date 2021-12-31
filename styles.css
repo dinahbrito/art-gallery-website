@@ -211,7 +211,45 @@ footer a:hover {
   ------------------*/
 
 @media screen and (min-width: 768px) {
+   /* Typography */
     h2 span::before {
         display: none;
     }
+
+    h2 {
+        font-size: 3.125rem;
+        line-height: 2.8125rem;
+    }
+
+    .day-container p, 
+    .inspired-text p {
+        margin-top: 1.5rem;
+    }
+
+    section {
+        margin-left: 2.4375rem;
+        margin-right: 2.4375rem;
+    }
+
+    /* Day Section */
+    .day {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.6875rem;
+    }
+
+    .day .grid-1 {
+        order: 2;
+    }
+
+    .grid-1 {
+        margin-bottom: 0;
+    }
+
+    .day .day-container {
+        max-width: 13.9375rem;
+        order: 1;
+    }
+
+    
 }
