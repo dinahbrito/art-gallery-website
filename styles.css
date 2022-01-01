@@ -322,3 +322,22 @@ footer a:hover {
         justify-content: space-between;
     }
 }
+
+/*------------------
+    Larger Screens
+  ------------------*/
+
+  @media screen and (min-width: 1000px){
+
+    /* Typography */
+    h1 {
+        font-size: 6rem;
+        line-height: 5.5rem;
+    }
+
+    .hero-container {
+        width: auto;
+    }
+
+    
+  }
