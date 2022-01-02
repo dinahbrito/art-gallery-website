@@ -357,8 +357,9 @@ footer a:hover {
 
     .hero-container {
         display: flex;
-        margin-left: 10.3125rem;
-        margin-right: 10.3125rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 11.8125rem;
         position: relative;
         width: auto; 
     }
@@ -382,10 +383,34 @@ footer a:hover {
     }
     .day {
        justify-content: space-between;
+       margin-bottom: 1.875rem;
     }
 
     .grid-1 {
         width: 635px;
     }
+    
+    /* Inspired Section */
+    .grid-2 {
+        max-width: 39.6875rem;
+        margin-bottom: 0;
+    }
 
+    .grid-3 {
+        margin-bottom: 1.875rem;
+    }
+
+    section .inspired {
+        max-width: 1110px;
+        margin-bottom: 11.25rem;
+    }
+
+    .inspired-container {
+        margin-left: 1.875rem;
+        width: 445px;
+    }
+
+    .inspired-text {
+        padding: 4.0625rem 3rem;
+    }
   }
