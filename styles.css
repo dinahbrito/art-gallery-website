@@ -258,10 +258,8 @@ footer a:hover {
     /* Day Section */
 
     .day {
-        display: flex;
         height: 25rem;
         margin-bottom: 0.6875rem;
-        justify-content: space-between;
     }
 
     .day .grid-1 {
@@ -283,6 +281,7 @@ footer a:hover {
 
     /* Inspired Section */
 
+    .day, 
     .inspired {
         display: flex;
         justify-content: space-between;
@@ -349,6 +348,7 @@ footer a:hover {
     header {
         height: 50rem;
     }
+    
     .hero {
         background-color:var(--heading);
         padding-left: 28.125rem;
@@ -360,13 +360,32 @@ footer a:hover {
         margin-left: 10.3125rem;
         margin-right: 10.3125rem;
         position: relative;
-        width: auto;
-        
+        width: auto; 
     }
-   
+
     .hero-text {
         max-width: 350px;
         margin-top: 0;
         margin-left: 246px; 
     }
+
+    /* section */
+
+    section {
+        margin-left: 10.25rem;
+        margin-right: 10.25rem;
+    }
+
+    /* Day */
+    .day .day-container {
+        max-width: 21.875rem;
+    }
+    .day {
+       justify-content: space-between;
+    }
+
+    .grid-1 {
+        width: 635px;
+    }
+
   }
