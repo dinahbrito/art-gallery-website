@@ -389,7 +389,7 @@ footer a:hover {
     .grid-1 {
         width: 635px;
     }
-    
+
     /* Inspired Section */
     .grid-2 {
         max-width: 39.6875rem;
@@ -412,5 +412,15 @@ footer a:hover {
 
     .inspired-text {
         padding: 4.0625rem 3rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 5rem 10.3125rem;
+    }
+
+    footer p{
+        font-size: 1.125rem;
+        width: 430px;
     }
   }
