@@ -335,9 +335,38 @@ footer a:hover {
         line-height: 5.5rem;
     }
 
-    .hero-container {
-        width: auto;
+    h2 {
+        font-size:3.75rem;
+        line-height: 3.75rem;
     }
 
-    
+    p {
+        font-size: 1.375rem;
+        line-height: 2rem;
+    }
+
+    /* Header  */
+    header {
+        height: 50rem;
+    }
+    .hero {
+        background-color:var(--heading);
+        padding-left: 28.125rem;
+        position: absolute;
+   }
+
+    .hero-container {
+        display: flex;
+        margin-left: 10.3125rem;
+        margin-right: 10.3125rem;
+        position: relative;
+        width: auto;
+        
+    }
+   
+    .hero-text {
+        max-width: 350px;
+        margin-top: 0;
+        margin-left: 246px; 
+    }
   }
