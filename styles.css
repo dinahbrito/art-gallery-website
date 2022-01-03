@@ -102,7 +102,7 @@ section {
     margin-bottom: 2rem;
 }
 
-.day-container p{
+.section-1 .container p{
     margin-top: 1.3125rem;
 }
 
@@ -201,10 +201,8 @@ footer a:hover {
 /*------------------
     Tablet Screens
   ------------------*/
-
 @media screen and (min-width: 768px) {
-   /* Typography */
-   
+   /* Typography */ 
    h1 {
        font-size: 4.375rem;
        line-height: 4.0625rem;
@@ -219,99 +217,18 @@ footer a:hover {
         display: none;
     }
 
-    .day-container p, 
+    .section-1 .container p, 
     .inspired-text p {
         margin-top: 1.5rem;
     }
 
     /* Layout */
-    
-    section {
-        margin-left: 2.4375rem;
-        margin-right: 2.4375rem;
+    .section-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 43.0625rem;
     }
 
-    /* Header */
-
-    header {
-        display: flex;
-        margin-bottom: 7.5rem;
-    }
-
-    .hero-container {
-        margin: 9.0625rem 2.5rem 0 -3rem;
-        width: 21.1875rem;
-    }
-
-    .hero-text {
-        margin-top: 3rem;
-    }
-
-    /* Day Section */
-
-    .day {
-        height: 25rem;
-        margin-bottom: 0.6875rem;
-    }
-
-    .day .grid-1 {
-        order: 2;
-    }
-
-    .grid-1 {
-        margin-bottom: 0;
-    }
-
-    .day .day-container {
-        max-width: 13.9375rem;
-        order: 1;
-    }
-
-    .day-container {
-        margin-top: 2.375rem;
-    }
-
-    /* Inspired Section */
-
-    .day, 
-    .inspired {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .inspired-container {
-        width: 17.5rem;
-        margin: 0;
-    }
-
-    .inspired-text{
-        padding: 5.3125rem 1.75rem;
-    }
-
-    .grid-2 {
-        margin-right: .06875rem;
-    }
-
-    .grid-3 {
-        margin-bottom: 0.6875rem;
-    }
-
-    /* footer */
-    footer {
-        padding: 3.5rem 2.4375rem;
-    }
-
-    footer p {
-        font-size: 1rem;
-        line-height: 1.625rem;
-        margin: 0;
-        width: 17.5625rem;
-    }
-
-    .footer-container {
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
 /*------------------
@@ -336,7 +253,7 @@ footer a:hover {
         line-height: 2rem;
     }
 
-    /* Header  */
+    /* Header 
     header {
         height: 50rem;
     }
@@ -360,59 +277,7 @@ footer a:hover {
         max-width: 350px;
         margin-top: 0;
         margin-left: 246px; 
-    }
+    } */
 
-    /* section */
-
-    section {
-        margin-left: 10.25rem;
-        margin-right: 10.25rem;
-    }
-
-    /* Day */
-    .day .day-container {
-        max-width: 21.875rem;
-    }
-    .day {
-       justify-content: space-between;
-       margin-bottom: 1.875rem;
-    }
-
-    .grid-1 {
-        width: 635px;
-    }
-
-    /* Inspired Section */
-    .grid-2 {
-        max-width: 39.6875rem;
-        margin-bottom: 0;
-    }
-
-    .grid-3 {
-        margin-bottom: 1.875rem;
-    }
-
-    section .inspired {
-        max-width: 1110px;
-        margin-bottom: 11.25rem;
-    }
-
-    .inspired-container {
-        margin-left: 1.875rem;
-        width: 445px;
-    }
-
-    .inspired-text {
-        padding: 4.0625rem 3rem;
-    }
-
-    /* Footer */
-    footer {
-        padding: 5rem 10.3125rem;
-    }
-
-    footer p{
-        font-size: 1.125rem;
-        width: 430px;
-    }
+   
   }
