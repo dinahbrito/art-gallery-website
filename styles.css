@@ -292,8 +292,20 @@ footer a:hover {
         padding: 5.25rem 1.8125rem;
     }
     
+    /* Footer */
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    footer p {
+        margin: 0;
+        max-width: 17.5625rem;
+    }
     
+    footer {
+        padding: 3.5rem 2.4375rem;
+    }
 }
 
 /*------------------
