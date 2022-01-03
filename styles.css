@@ -299,6 +299,7 @@ footer a:hover {
     }
 
     footer p {
+        font-size: 1rem;
         margin: 0;
         max-width: 17.5625rem;
     }
@@ -390,5 +391,14 @@ footer a:hover {
     .inspired-text {
         padding: 4.0625rem 3rem;
     }
+
+    /* Footer Large Screens */
+    footer p {
+        font-size: 1.125rem;
+        max-width: 26.875rem;
+    }
    
+    footer {
+        padding: 5rem 10.3125rem;
+    }
   }
