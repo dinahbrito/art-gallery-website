@@ -264,6 +264,36 @@ footer a:hover {
         margin-right: 4.25rem;
         max-width: 13.9375rem;
     }
+
+    /* Section-2 */
+    .section-2 {
+        margin-bottom: 7.5rem;
+    }
+
+    .grid-2 img {
+        margin-right: .6875rem;
+        width: 24.875rem;
+    }
+
+    .grid-3 img{
+        margin-bottom: 5px;
+    }
+
+    .inspired-text, 
+    .grid-2 img{
+        margin-bottom: 0;
+    }
+
+    .inspired-container {
+        width: 17.5rem;
+    } 
+
+    .inspired-text {
+        padding: 5.25rem 1.8125rem;
+    }
+    
+
+    
 }
 
 /*------------------
