@@ -204,7 +204,7 @@ footer a:hover {
     Tablet Screens
   ------------------*/
 @media screen and (min-width: 768px) {
-   /* Typography */ 
+   /* Typography Tablet*/ 
    h1 {
        font-size: 4.375rem;
        line-height: 4.0625rem;
@@ -224,7 +224,7 @@ footer a:hover {
         margin-top: 1.5rem;
     }
 
-    /* Layout */
+    /* Layout Tablet*/
     .section-wrapper {
         margin-left: auto;
         margin-right: auto;
@@ -235,7 +235,7 @@ footer a:hover {
         display: flex;
     }
 
-    /* Header */
+    /* Header Tablet*/
     header {
         display: flex;
         margin-bottom: 7.5rem;
@@ -248,7 +248,7 @@ footer a:hover {
         max-width: 21.1875rem;
     }
 
-    /* Section-1 */
+    /* Section-1 Tablet*/
     .section-1 {
         margin-bottom: .6875rem;
     }
@@ -265,7 +265,7 @@ footer a:hover {
         max-width: 13.9375rem;
     }
 
-    /* Section-2 */
+    /* Section-2 Tablet */
     .section-2 {
         margin-bottom: 7.5rem;
     }
@@ -292,7 +292,7 @@ footer a:hover {
         padding: 5.25rem 1.8125rem;
     }
     
-    /* Footer */
+    /* Footer Tablet */
     .footer-container {
         display: flex;
         justify-content: space-between;
@@ -312,9 +312,9 @@ footer a:hover {
     Larger Screens
   ------------------*/
 
-  @media screen and (min-width: 1000px){
+  @media screen and (min-width: 1339px){
 
-    /* Typography */
+    /* Typography Large Screens */
     h1 {
         font-size: 6rem;
         line-height: 5.5rem;
@@ -330,31 +330,65 @@ footer a:hover {
         line-height: 2rem;
     }
 
-    /* Header 
+    /* Layout Large Screens*/
+    .section-wrapper {
+        max-width: 69.375rem;
+    }
+
+    /* Header Large Screens*/
     header {
+        position: relative;
+    }
+    .hero-img {
+        padding-left: 28.125rem;
+        background-color: var(--heading);
         height: 50rem;
     }
     
-    .hero {
-        background-color:var(--heading);
-        padding-left: 28.125rem;
-        position: absolute;
-   }
-
     .hero-container {
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: space-between;
+        margin-left: 11.5%;
         margin-top: 11.8125rem;
-        position: relative;
-        width: auto; 
+        max-width: 69.375rem;
+        position: absolute; 
+    }
+
+    .hero-container h1 {
+        color: var(--background);
+        margin-right: 246px;
+        mix-blend-mode: difference;
+        width: 514px;
     }
 
     .hero-text {
-        max-width: 350px;
         margin-top: 0;
-        margin-left: 246px; 
-    } */
+        max-width: 350px;
+    } 
+ 
+    /* Section-1 Large Screens */
+    .section-1,
+    .grid-3 img {
+        margin-bottom: 1.875rem;
+    }
 
+    .container {
+        margin-right: 7.8125rem;
+        max-width: 21.875rem;
+    }
+
+    /* Section-2 Large Screens */
+    .grid-2 img {
+        margin-right: 1.875rem;
+        width: 39.6875rem;
+    }
+
+    .inspired-container {
+        width: 27.8125rem;
+    }
+
+    .inspired-text {
+        padding: 4.0625rem 3rem;
+    }
    
   }
