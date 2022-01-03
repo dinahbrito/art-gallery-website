@@ -80,11 +80,17 @@ i {
     Layout
   ----------*/
 
-section {
+.section-wrapper {
       margin-left: 1rem;
       margin-right: 1rem;
+      max-width: 100%;
 }
 
+.section-wrapper img {
+    max-width: 100%;
+}
+
+/* hero section */
 .hero-container {
     margin: 2rem 1rem 7.5rem 1rem;
 }
@@ -93,12 +99,12 @@ section {
     margin-top: 2rem;
 }
 
-/* Day/1st Section */
-.grid-1 {
+/* Section-1 */
+.grid-1 img{
     margin-bottom: 1.5625rem;
 }
 
-.day {
+.section-1 {
     margin-bottom: 2rem;
 }
 
