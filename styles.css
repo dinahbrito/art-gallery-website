@@ -19,14 +19,6 @@
       -webkit-font-smoothing: antialiased;
   }
 
-
-  /* Make images easier to work with */
-img,
-picture {
-    max-width: 100%;
-    display: block;
-}
-
 /*----------------
     Global Styles
   ----------------*/
@@ -88,11 +80,17 @@ i {
     Layout
   ----------*/
 
-section {
+.section-wrapper {
       margin-left: 1rem;
       margin-right: 1rem;
+      max-width: 100%;
 }
 
+.section-wrapper img {
+    max-width: 100%;
+}
+
+/* hero section */
 .hero-container {
     margin: 2rem 1rem 7.5rem 1rem;
 }
@@ -101,23 +99,22 @@ section {
     margin-top: 2rem;
 }
 
-/* Day/1st Section */
-.grid-1 {
+/* Section-1 */
+.grid-1 img{
     margin-bottom: 1.5625rem;
 }
 
-.day {
+.section-1 {
     margin-bottom: 2rem;
 }
 
-.day-container p{
+.section-1 .container p{
     margin-top: 1.3125rem;
 }
 
 /* 2nd Section */
-
-.grid-2,
-.grid-3 {
+.grid-2 img,
+.grid-3 img {
     margin-bottom: 1rem;
 }
 
@@ -126,8 +123,7 @@ footer {
     background-color: var(--heading);
 }
 
-.inspired-text {
-    
+.inspired-text {  
     margin-bottom: 7.5rem;
     padding: 3rem 1.5rem;
 }
@@ -137,7 +133,6 @@ footer {
 }
 
 /* Footer */
-
 footer {
     font-size: 1rem;
     line-height: 1.625rem;
@@ -152,7 +147,6 @@ footer p {
 /*---------------
     Link/Button
   ---------------*/
-
 .arrow, 
 .link {
     align-items: center;
@@ -209,10 +203,8 @@ footer a:hover {
 /*------------------
     Tablet Screens
   ------------------*/
-
 @media screen and (min-width: 768px) {
-   /* Typography */
-   
+   /* Typography Tablet*/ 
    h1 {
        font-size: 4.375rem;
        line-height: 4.0625rem;
@@ -227,98 +219,92 @@ footer a:hover {
         display: none;
     }
 
-    .day-container p, 
+    .section-1 .container p, 
     .inspired-text p {
         margin-top: 1.5rem;
     }
 
-    /* Layout */
-    
-    section {
-        margin-left: 2.4375rem;
-        margin-right: 2.4375rem;
+    /* Layout Tablet*/
+    .section-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 43.0625rem;
     }
 
-    /* Header */
+    section {
+        display: flex;
+    }
 
+    /* Header Tablet*/
     header {
         display: flex;
         margin-bottom: 7.5rem;
     }
 
     .hero-container {
-        margin: 9.0625rem 2.5rem 0 -3rem;
-        width: 21.1875rem;
+        margin-bottom: 0;
+        margin-left: -3.125rem;
+        margin-top: 9.0625rem;
+        max-width: 21.1875rem;
     }
 
-    .hero-text {
-        margin-top: 3rem;
+    /* Section-1 Tablet*/
+    .section-1 {
+        margin-bottom: .6875rem;
     }
-
-    /* Day Section */
-
-    .day {
-        height: 25rem;
-        margin-bottom: 0.6875rem;
-    }
-
-    .day .grid-1 {
-        order: 2;
-    }
-
-    .grid-1 {
+    .grid-1 img {
         margin-bottom: 0;
     }
 
-    .day .day-container {
+    .grid-1 {
+        order: 2;
+    }
+    
+    .container {
+        margin-right: 4.25rem;
         max-width: 13.9375rem;
-        order: 1;
     }
 
-    .day-container {
-        margin-top: 2.375rem;
+    /* Section-2 Tablet */
+    .section-2 {
+        margin-bottom: 7.5rem;
     }
 
-    /* Inspired Section */
+    .grid-2 img {
+        margin-right: .6875rem;
+        width: 24.875rem;
+    }
 
-    .day, 
-    .inspired {
-        display: flex;
-        justify-content: space-between;
+    .grid-3 img{
+        margin-bottom: 5px;
+    }
+
+    .inspired-text, 
+    .grid-2 img{
+        margin-bottom: 0;
     }
 
     .inspired-container {
         width: 17.5rem;
-        margin: 0;
-    }
+    } 
 
-    .inspired-text{
-        padding: 5.3125rem 1.75rem;
+    .inspired-text {
+        padding: 5.25rem 1.8125rem;
     }
-
-    .grid-2 {
-        margin-right: .06875rem;
-    }
-
-    .grid-3 {
-        margin-bottom: 0.6875rem;
-    }
-
-    /* footer */
-    footer {
-        padding: 3.5rem 2.4375rem;
-    }
-
-    footer p {
-        font-size: 1rem;
-        line-height: 1.625rem;
-        margin: 0;
-        width: 17.5625rem;
-    }
-
+    
+    /* Footer Tablet */
     .footer-container {
         display: flex;
         justify-content: space-between;
+    }
+
+    footer p {
+        margin: 0;
+        max-width: 17.5625rem;
+    }
+    
+    footer {
+        padding: 3.5rem 2.4375rem;
     }
 }
 
@@ -326,9 +312,9 @@ footer a:hover {
     Larger Screens
   ------------------*/
 
-  @media screen and (min-width: 1000px){
+  @media screen and (min-width: 1339px){
 
-    /* Typography */
+    /* Typography Large Screens */
     h1 {
         font-size: 6rem;
         line-height: 5.5rem;
@@ -344,83 +330,65 @@ footer a:hover {
         line-height: 2rem;
     }
 
-    /* Header  */
+    /* Layout Large Screens*/
+    .section-wrapper {
+        max-width: 69.375rem;
+    }
+
+    /* Header Large Screens*/
     header {
+        position: relative;
+    }
+    .hero-img {
+        padding-left: 28.125rem;
+        background-color: var(--heading);
         height: 50rem;
     }
     
-    .hero {
-        background-color:var(--heading);
-        padding-left: 28.125rem;
-        position: absolute;
-   }
-
     .hero-container {
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: space-between;
+        margin-left: 11.5%;
         margin-top: 11.8125rem;
-        position: relative;
-        width: auto; 
+        max-width: 69.375rem;
+        position: absolute; 
+    }
+
+    .hero-container h1 {
+        color: var(--background);
+        margin-right: 246px;
+        mix-blend-mode: difference;
+        width: 514px;
     }
 
     .hero-text {
-        max-width: 350px;
         margin-top: 0;
-        margin-left: 246px; 
-    }
-
-    /* section */
-
-    section {
-        margin-left: 10.25rem;
-        margin-right: 10.25rem;
-    }
-
-    /* Day */
-    .day .day-container {
-        max-width: 21.875rem;
-    }
-    .day {
-       justify-content: space-between;
-       margin-bottom: 1.875rem;
-    }
-
-    .grid-1 {
-        width: 635px;
-    }
-
-    /* Inspired Section */
-    .grid-2 {
-        max-width: 39.6875rem;
-        margin-bottom: 0;
-    }
-
-    .grid-3 {
+        max-width: 350px;
+    } 
+ 
+    /* Section-1 Large Screens */
+    .section-1,
+    .grid-3 img {
         margin-bottom: 1.875rem;
     }
 
-    section .inspired {
-        max-width: 1110px;
-        margin-bottom: 11.25rem;
+    .container {
+        margin-right: 7.8125rem;
+        max-width: 21.875rem;
+    }
+
+    /* Section-2 Large Screens */
+    .grid-2 img {
+        margin-right: 1.875rem;
+        width: 39.6875rem;
     }
 
     .inspired-container {
-        margin-left: 1.875rem;
-        width: 445px;
+        width: 27.8125rem;
     }
 
     .inspired-text {
         padding: 4.0625rem 3rem;
     }
-
-    /* Footer */
-    footer {
-        padding: 5rem 10.3125rem;
-    }
-
-    footer p{
-        font-size: 1.125rem;
-        width: 430px;
-    }
+   
   }
