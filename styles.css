@@ -313,7 +313,7 @@ footer a:hover {
     Larger Screens
   ------------------*/
 
-  @media screen and (min-width: 1339px){
+  @media screen and (min-width: 1200px){
 
     /* Typography Large Screens */
     h1 {
