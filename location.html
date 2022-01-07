@@ -72,9 +72,9 @@
 
 <!-- Script for Map -->
 <script>
-  var map = L.map('map').setView([51.505, -0.09], 13);
+  var map = L.map('map').setView([41.481310, -71.310410], 13);
 
-  L.tileLayer('https://api.mapbox.com/styles/v1/andraia007/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW5kcmFpYTAwNyIsImEiOiJja3kwdmwxcmcwNHhpMm5wZWNvdXFya3FmIn0.tnflXbqjSk2P8NPgX1oWDQ', {
+  L.tileLayer('https://api.mapbox.com/styles/v1/andraia007/cky2g8t2939o014jm9czkpqzj/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
@@ -83,7 +83,8 @@
     accessToken: 'pk.eyJ1IjoiYW5kcmFpYTAwNyIsImEiOiJja3kwdmwxcmcwNHhpMm5wZWNvdXFya3FmIn0.tnflXbqjSk2P8NPgX1oWDQ'
   }).addTo(map);
 
-  var marker = L.marker([51.5, -0.09]).addTo(map);
+
+  var marker = L.marker([41.481310, -71.310410]).addTo(map);
 </script>
 
 </html>
