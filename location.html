@@ -37,7 +37,7 @@
 
   <main>
     <h1>Our location</h1>
-    <div class="p-info">
+    <div class="info">
       <h2>99 King Street</h2>
       <p>
         Newport <br>
@@ -52,39 +52,40 @@
   </main>
 
   <footer>
-    <div class="col-1">
-      <h3>Modern Art Gallery</h3>
-    </div>
-    <div class="col-2">
-      The Modern Art Gallery is free to all visitors and open seven days a week
-      from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-    </div>
-    <div class="col-3">
-      <a href="facebook.com"><i class="fab fa-facebook-square"></i></a>
-      <a href="instagram.com"><i class="fab fa-instagram"></i></a>
-      <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+    <div class="footer-wrapper">
+      <div class="col-1">
+        <h3>Modern <br> Art Gallery</h3>
+      </div>
+      <div class="col-2">
+        The Modern Art Gallery is free to all visitors and open seven days a week
+        from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+      </div>
+      <div class="col-3">
+        <a href="facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
   </footer>
 
   <!-- Font Awesome Script -->
   <script src="https://kit.fontawesome.com/78956e692b.js" crossorigin="anonymous"></script>
+  <!-- Script for Map -->
+  <script>
+    var map = L.map('map').setView([41.481310, -71.310410], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/andraia007/cky2g8t2939o014jm9czkpqzj/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoiYW5kcmFpYTAwNyIsImEiOiJja3kwdmwxcmcwNHhpMm5wZWNvdXFya3FmIn0.tnflXbqjSk2P8NPgX1oWDQ'
+    }).addTo(map);
+
+    // Adds marker
+    var marker = L.marker([41.481310, -71.310410]).addTo(map);
+  </script>
 </body>
-
-<!-- Script for Map -->
-<script>
-  var map = L.map('map').setView([41.481310, -71.310410], 13);
-
-  L.tileLayer('https://api.mapbox.com/styles/v1/andraia007/cky2g8t2939o014jm9czkpqzj/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoiYW5kcmFpYTAwNyIsImEiOiJja3kwdmwxcmcwNHhpMm5wZWNvdXFya3FmIn0.tnflXbqjSk2P8NPgX1oWDQ'
-  }).addTo(map);
-
-
-  var marker = L.marker([41.481310, -71.310410]).addTo(map);
-</script>
 
 </html>
