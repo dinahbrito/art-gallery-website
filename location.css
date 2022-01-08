@@ -1,3 +1,116 @@
+:root {
+    --accent: #D5966C;
+    --heading: #151515;
+    --body-text: #444444;
+    --background: #FFFFFF;
+}
+
+/*---------
+    Reset
+  ---------*/
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*----------------
+    Global Styles
+  ----------------*/
+  body {
+    background-color: var(--background);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300; 
+  }
+
+/*--------------
+    Typography
+  --------------*/
+footer p,
+h3,
+i {
+    color: var(--heading);
+} 
+
+h1, 
+h2,
+h3 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+}
+
+h1,
+main p {
+    color: var(--background);
+}
+
+h1 {
+    font-size: 3.125rem;
+    line-height: 2.185rem;
+}
+
+h2 {
+    color: var(--accent);
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+i {
+    font-size: 1.25rem;
+}
+
+/*----------
+    Layout
+  ----------*/
+main {
+    background-color: var(--heading);
+    padding: 3rem 1rem 3.5rem 1rem;
+}
+
+.info {
+    margin-top: 3rem;
+}
+
+.info h2,
+.address {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.info,
+.footer-wrapper {
+    max-width: 21.4375rem;
+}
+
+footer {
+    background-color: var(--accent);
+    padding: 3rem 1rem;
+}
+
+.col-1,
+.col-2 {
+    margin-bottom: 2.375rem;
+}
+
+i:hover {
+    color: var(--background);
+}
+
+.fa-facebook-square,
+.fa-instagram {
+    margin-right: 1.25rem;
+}
+
+/* Map */
 #map { 
     height: 34.375rem; 
 }
+
