@@ -63,6 +63,10 @@ footer p {
     font-size: 1rem;
 }
 
+i {
+    font-size: 1.25rem;
+}
+
 /*----------
     Layout
   ----------*/
@@ -71,6 +75,16 @@ main {
     padding: 3rem 1rem 3.5rem 1rem;
 }
 
+.info {
+    margin-top: 3rem;
+}
+
+.info h2,
+.address {
+    margin-bottom: 20px;
+}
+
+/* Footer */
 .info,
 .footer-wrapper {
     max-width: 21.4375rem;
@@ -81,7 +95,22 @@ footer {
     padding: 3rem 1rem;
 }
 
+.col-1,
+.col-2 {
+    margin-bottom: 2.375rem;
+}
+
+i:hover {
+    color: var(--background);
+}
+
+.fa-facebook-square,
+.fa-instagram {
+    margin-right: 1.25rem;
+}
+
 /* Map */
 #map { 
     height: 34.375rem; 
 }
+
