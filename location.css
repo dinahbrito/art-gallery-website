@@ -114,3 +114,35 @@ i:hover {
     height: 34.375rem; 
 }
 
+/* Link/Button */
+.arrow-l,
+.home-link a{
+    align-items: center;
+    display: flex;
+    height: 4.5rem;
+    justify-content: center;
+}
+
+.home-link a {
+    background-color: var(--heading);
+    color: var(--background);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 3.64px;
+    line-height: 1.49625rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 208px;
+}
+
+.arrow-l {
+    background-color: var(--accent);
+    width: 56px;
+}
+
+.home-link {
+    display: flex;
+    top: 0;
+    left: 0;
+}
