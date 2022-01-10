@@ -162,6 +162,11 @@ i:hover {
         line-height: 1.75rem;
       }
 
+      footer p {
+          font-size: 1rem;
+          line-height: 1.625rem;
+      }
+
       /* Layout - Tablet */
       main {
           display: grid;
@@ -178,5 +183,19 @@ i:hover {
       .info {
           margin-top: 0;
           max-width: 398px;
+      }
+
+      /* Footer - Tablet */
+      footer {
+        padding: 3.5rem 2.4375rem;
+      }
+      .footer-wrapper {
+          display: flex;
+          justify-content: space-between;
+          max-width: 689px;
+      }
+
+      .col-2 {
+          width: 17.5625rem;
       }
   }
