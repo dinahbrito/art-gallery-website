@@ -146,3 +146,37 @@ i:hover {
     top: 0;
     left: 0;
 }
+
+/*------------------
+    Tablet Screens
+  ------------------*/
+  @media screen and (min-width: 768px) {
+      /* Typography - Tablet */
+      h1 {
+          font-size: 3.4375rem;
+          line-height: 3.125rem;
+      }
+      
+      main p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+
+      /* Layout - Tablet */
+      main {
+          display: grid;
+          grid-template-columns: 1fr 398px;
+          justify-content: space-between;
+          padding: 5.5rem 2.4375rem 5rem 2.4375rem;
+      }
+
+      h1 span::before {
+        content:"\A";
+        white-space: pre;
+    }
+
+      .info {
+          margin-top: 0;
+          max-width: 398px;
+      }
+  }
