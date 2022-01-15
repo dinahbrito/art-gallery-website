@@ -82,8 +82,8 @@
 
     L.tileLayer('https://api.mapbox.com/styles/v1/andraia007/cky2g8t2939o014jm9czkpqzj/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      minZoom: 13,
-      maxZoom: 15,
+      minZoom: 15,
+      maxZoom: 20,
       id: 'mapbox/streets-v11',
       tileSize: 512,
       zoomOffset: -1,
@@ -91,8 +91,16 @@
     }).addTo(map);
 
     map.removeControl(map.zoomControl);
-    // Adds marker
-    var marker = L.marker([41.481310, -71.310410]).addTo(map);
+
+    // Create custom marker
+    var galleryIcon = L.icon({
+      iconUrl: './assets/icon-location.svg',
+      iconSize: [66, 88], // size of the icon
+      iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+    });
+
+    // Adds custom marker
+    L.marker([41.481310, -71.310410], { icon: galleryIcon }).addTo(map);
   </script>
 </body>
 
