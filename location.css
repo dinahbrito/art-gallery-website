@@ -124,6 +124,7 @@ i:hover {
 }
 
 .home-link a {
+    align-items: center;
     background-color: var(--heading);
     color: var(--background);
     font-family: 'Big Shoulders Display', sans-serif;
@@ -142,10 +143,12 @@ i:hover {
 }
 
 .home-link {
+    border: none;
     display: flex;
     top: 0;
     left: 0;
-    
+    position: absolute;
+    z-index: 500;  
 }
 
 /*------------------

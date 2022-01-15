@@ -27,14 +27,17 @@
 </head>
 
 <body>
-  <div class="home-link">
-    <div class="arrow-l"><img src="./assets/icon-arrow-left.svg" alt="left arrow icon"></div>
-    <a href="index.html">Back to Home</a>
+
+
+  <div class="mapDiv">
+    <div id="map" class="map">
+      <button class="home-link">
+        <div class="arrow-l"><img src="./assets/icon-arrow-left.svg" alt="left arrow icon"></div>
+        <a href="index.html">Back to Home</a>
+      </button>
+    </div>
   </div>
 
-  <div id="map" class="map">
-
-  </div>
 
   <main>
     <h1>Our<span></span> location</h1>
@@ -77,14 +80,15 @@
 
     L.tileLayer('https://api.mapbox.com/styles/v1/andraia007/cky2g8t2939o014jm9czkpqzj/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 18,
+      minZoom: 13,
+      maxZoom: 15,
       id: 'mapbox/streets-v11',
       tileSize: 512,
       zoomOffset: -1,
       accessToken: 'pk.eyJ1IjoiYW5kcmFpYTAwNyIsImEiOiJja3kwdmwxcmcwNHhpMm5wZWNvdXFya3FmIn0.tnflXbqjSk2P8NPgX1oWDQ'
     }).addTo(map);
 
-
+    map.removeControl(map.zoomControl);
     // Adds marker
     var marker = L.marker([41.481310, -71.310410]).addTo(map);
   </script>
