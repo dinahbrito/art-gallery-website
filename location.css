@@ -123,7 +123,7 @@ i:hover {
     justify-content: center;
 }
 
-.home-link a {
+.map button a {
     align-items: center;
     background-color: var(--heading);
     color: var(--background);
@@ -136,6 +136,15 @@ i:hover {
     text-transform: uppercase;
     width: 208px;
 }
+
+/* not working */
+/* button a:hover {
+    background-color: var(--accent);
+}
+
+button .arrow-l:hover {
+    background-color: var(--heading);
+} */
 
 .arrow-l {
     background-color: var(--accent);
@@ -150,6 +159,9 @@ i:hover {
     position: absolute;
     z-index: 500;  
 }
+
+
+
 
 /*------------------
     Tablet Screens
@@ -188,6 +200,11 @@ i:hover {
           margin-top: 0;
           max-width: 398px;
       }
+
+      /* Home button */
+      .home-link {
+        left: 2.4375rem;
+    }
 
       /* Footer - Tablet */
       footer {
