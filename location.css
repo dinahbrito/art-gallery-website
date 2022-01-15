@@ -262,4 +262,9 @@ button .arrow-l:hover {
       .col-2 {
         width: 26.875rem;
       }
+
+       /* Home button for larger screens*/
+       .home-link {
+        left: 9.75rem;
+    }
   }
