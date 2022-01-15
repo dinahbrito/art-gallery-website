@@ -137,14 +137,17 @@ i:hover {
     width: 208px;
 }
 
-/* not working */
-/* button a:hover {
-    background-color: var(--accent);
+button:hover .arrow-l {
+    background-color: var(--heading);
 }
 
-button .arrow-l:hover {
-    background-color: var(--heading);
-} */
+button:hover a {
+    background-color: var(--accent);
+}
+button:hover .arrow-l,
+button:hover a {
+    transition: all .3s ease-out;
+}
 
 .arrow-l {
     background-color: var(--accent);
