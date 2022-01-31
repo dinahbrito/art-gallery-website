@@ -1,4 +1,4 @@
-# [Frontend Mentor](frontendmentor.io/) - Art gallery website - WIP
+# [Frontend Mentor](frontendmentor.io/) - Art gallery website - WIP 
 ![](./assets/screenshot.jpg)
 
 ## The challenge
